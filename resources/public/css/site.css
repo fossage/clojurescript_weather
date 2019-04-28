@@ -1,34 +1,99 @@
-.body-container {
-  font-family: 'Helvetica Neue', Verdana, Helvetica, Arial, sans-serif;
-  max-width: 600px;
-  margin: 0 auto;
-  padding-top: 72px;
-  -webkit-font-smoothing: antialiased;
-  font-size: 1.125em;
-  color: #333;
-  line-height: 1.5em;
-}
+* {
+  font-family: 'Avenir'; }
 
-h1, h2, h3 {
-  color: #000;
-}
-h1 {
-  font-size: 2.5em
-}
+.App {
+  background-color: #18446d;
+  height: 100vh;
+  padding: 2vh 5vw; }
 
-h2 {
-  font-size: 2em
-}
+.row {
+  flex-direction: row; }
 
-h3 {
-  font-size: 1.5em
-}
+.min-max-text {
+  flex: 1;
+  color: #fff;
+  display: flex;
+  font-size: 0.9em;
+  margin-bottom: 0px; }
 
-a {
-  text-decoration: none;
-  color: #09f;
-}
+.current-temp-text {
+  font-size: 68px;
+  color: #fff;
+  text-shadow: 1px 1px #4d4d4d;
+  margin-top: 0px;
+  margin-bottom: 5px; }
 
-a:hover {
-  text-decoration: underline;
-}
+.current-weather-container {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.current-time-text {
+  color: #ffe07a; }
+
+.city-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 18px;
+  min-width: 200px; }
+
+.city-container h1 {
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 5px; }
+
+.city-container input {
+  border-radius: 5px;
+  font-size: 16px;
+  border: 0px;
+  margin-bottom: 5px;
+  padding-left: 8px; }
+
+.city-container button {
+  font-size: 12px;
+  border-radius: 5px; }
+
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px; }
+
+.weather-item-container {
+  display: flex;
+  justify-content: space-between; }
+
+.weather-item-container:not(:last-child) {
+  border-bottom: 1px solid #ccc; }
+
+.weather-item-inner-container {
+  padding-left: 7px;
+  padding-right: 7px; }
+
+.date-heading {
+  margin-top: 10px;
+  margin-bottom: 3px; }
+
+.weather-description {
+  margin-top: 0px;
+  margin-bottom: 8px;
+  font-size: 14px; }
+
+.temp-and-img-container {
+  display: flex;
+  justify-content: flex-end; }
+
+.temp-min-max-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.temp-min-max-text {
+  margin: 1px; }
+
+.weather-img {
+  padding: 12px;
+  max-width: 40px;
+  max-height: 40px; }
